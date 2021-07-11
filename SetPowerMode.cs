@@ -82,8 +82,19 @@ namespace PowerMode
                             return 1;
                         }
                     }
+                    uint result = PowerSetActiveOverlayScheme(powerMode);
 
-                    return (int)PowerSetActiveOverlayScheme(powerMode);
+                    if (result == 0)
+                    {
+                        Console.WriteLine("Set power mode to {0}.", powerMode);
+                    }
+                    else
+                    {
+                        Console.Error.WriteLine("Failed to set power mode.\n");
+                        Usage();
+                    }
+
+                    return (int)result;
                 }
                 else
                 {
