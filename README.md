@@ -6,7 +6,7 @@ This program allows you to adjust the Windows "power mode" from the command line
 
 ## Requirements
 
- - Windows 10, version 1703 or later
+ - Windows 10, version 1709 or later
  - .NET Framework 4.7.1 (should be be already installed on applicable versions of Windows)
 
 ## Use
